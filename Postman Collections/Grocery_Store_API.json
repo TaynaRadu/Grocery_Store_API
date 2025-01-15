@@ -341,7 +341,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"customerName\": \"Diana Angelo\"\n}",
+					"raw": "{\n\"comment\": \"Front door\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
