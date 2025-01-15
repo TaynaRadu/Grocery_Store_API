@@ -376,7 +376,37 @@
 			"request": {
 				"method": "PATCH",
 				"header": [],
-				"url": ""
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/carts/:cartId/items/:itemId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items",
+						":itemId"
+					],
+					"variable": [
+						{
+							"key": "cartId",
+							"value": "{{cartId}}"
+						},
+						{
+							"key": "itemId",
+							"value": "916322489"
+						}
+					]
+				}
 			},
 			"response": []
 		}
