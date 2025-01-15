@@ -171,7 +171,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\n    {\n        \"productId\": 1225\n    },\n    {\n        \"productId\": 7395\n    }\n]",
+					"raw": "{\n    \"productId\": 1225\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -364,6 +364,19 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update quantity",
+			"id": "490d34a7-2832-4ba6-a807-b2f03f3f266c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": ""
 			},
 			"response": []
 		}
