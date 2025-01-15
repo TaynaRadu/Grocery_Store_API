@@ -150,7 +150,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "2oHC8Wobbe2KTcMVNvpOw"
+							"value": "{{cartId}}"
 						}
 					]
 				}
@@ -171,7 +171,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\"productId\": 2177,\n\"quantity\" : 2\n}",
+					"raw": "[\n    {\n        \"productId\": 1225\n    },\n    {\n        \"productId\": 7395\n    }\n]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -191,7 +191,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "2oHC8Wobbe2KTcMVNvpOw"
+							"value": "{{cartId}}"
 						}
 					]
 				}
@@ -376,7 +376,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9d1f79f8-9580-4a0c-bf8f-5b53c6b64282",
+				"id": "b0dad9f0-0aaa-4212-a9b9-243c73cf8cc8",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -387,7 +387,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9358373f-9285-4dc2-9d5f-ecbc4563e02f",
+				"id": "552bf8a6-0192-4f3f-a9dd-2fc321793c53",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -404,6 +404,11 @@
 		{
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
+			"type": "string"
+		},
+		{
+			"key": "cartId",
+			"value": "YOUR CART ID HERE",
 			"type": "string"
 		}
 	]
