@@ -409,6 +409,19 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Replace an item",
+			"id": "be29b28f-23a0-418d-a231-4c299a096162",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": ""
+			},
+			"response": []
 		}
 	],
 	"auth": {
