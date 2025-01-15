@@ -486,6 +486,19 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Delete an order",
+			"id": "060ce206-5243-4ec2-9f9d-93c3a738e81c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": ""
+			},
+			"response": []
 		}
 	],
 	"auth": {
