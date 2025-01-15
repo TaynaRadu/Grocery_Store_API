@@ -494,9 +494,30 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
 				"method": "DELETE",
 				"header": [],
-				"url": ""
+				"url": {
+					"raw": "{{baseUrl}}/orders/:orderId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "TGXQhJTUfp6PNJJs8EvKb"
+						}
+					]
+				}
 			},
 			"response": []
 		}
