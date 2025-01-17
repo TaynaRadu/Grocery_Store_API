@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "2937418d-40ae-413a-97cb-bd838699ab92",
+		"name": "Valentine's Book API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34536684",
+		"_collection_link": "https://red-zodiac-844242.postman.co/workspace/bb480b60-192f-41b3-a1a0-43e259217728/collection/34536684-2937418d-40ae-413a-97cb-bd838699ab92?action=share&source=collection_link&creator=34536684"
+	},
+	"item": [
+		{
+			"name": "Check Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/status",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a book list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "My Postman",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/books/lists?list=non-fiction&page=3&api-key={{apiKey}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"books",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "list",
+							"value": "non-fiction"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "api-key",
+							"value": "{{apiKey}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://valentines-book-list.glitch.me",
+			"type": "string"
+		},
+		{
+			"key": "apiKey",
+			"value": "YOUR KEY HERE",
+			"type": "string"
+		}
+	]
+}
